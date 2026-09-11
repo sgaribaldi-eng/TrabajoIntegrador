@@ -7,6 +7,105 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <main>
+
+    <div class="Tituloreg">
+        <h4>REGISTRATE</h4>
+    </div>
+
+    <form action="registro.html" method="post" class="formularioRegistro">
+
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div>
+            <label for="pais">País de nacimiento:</label>
+
+            <select name="pais" id="pais" required>
+                <option value="">Seleccione un país</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Género:</label>
+
+            <label>
+                <input type="radio" name="genero" value="masculino">
+                Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="genero" value="femenino">
+                Femenino
+            </label>
+
+            <label>
+                <input type="radio" name="genero" value="prefiero">
+                Prefiero no decirlo
+            </label>
+        </div>
+
+        <div>
+            <label>Hobbies:</label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="deporte">
+                Deporte
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="musica">
+                Música
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="lectura">
+                Lectura
+            </label>
+
+            <label>
+                <input type="checkbox" name="hobbies" value="viajar">
+                Viajar
+            </label>
+        </div>
+
+        <div>
+            <label for="comentarios">Dejanos tus comentarios:</label>
+            <textarea id="comentarios" name="comentarios"></textarea>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="terminos">
+                Acepto los términos y condiciones
+            </label>
+        </div>
+
+        <div>
+            <button type="submit">Registrarse</button>
+            <button type="reset">Cancelar</button>
+        </div>
+
+    </form>
+
+</main>
     
 </body>
 </html>
